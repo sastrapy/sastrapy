@@ -26,5 +26,5 @@ class StopwordRemoverMachine():
     if type(self.data) == str:
       data = self.data.split()
     
-    result = [word.strip() if word.lower() not in self.dictionary else None for word in data]
-    return list(filter(None, result)) if type(self.data) == list else ' '.join(result).strip()
+    result = list(filter(None, [word.strip() if word.lower() not in self.dictionary else None for word in data]))
+    return result if type(self.data) == list else ' '.join(result).strip()

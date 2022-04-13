@@ -1,0 +1,14 @@
+setup.py
+src/Sastrapy/__init__.py
+src/Sastrapy.egg-info/PKG-INFO
+src/Sastrapy.egg-info/SOURCES.txt
+src/Sastrapy.egg-info/dependency_links.txt
+src/Sastrapy.egg-info/requires.txt
+src/Sastrapy.egg-info/top_level.txt
+src/Sastrapy/Corpus/SlangConverter.py
+src/Sastrapy/Corpus/StopwordRemover.py
+src/Sastrapy/Corpus/__init__.py
+src/Sastrapy/Corpus/Dictionary/slang.txt
+src/Sastrapy/Corpus/Dictionary/stopwords.txt
+src/Sastrapy/WordTokenize/Tokenize.py
+src/Sastrapy/WordTokenize/__init__.py

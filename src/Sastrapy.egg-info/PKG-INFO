@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: Sastrapy
+Version: 0.1.4
+Summary: A simple text processing for Bahasa Indonesia
+Home-page: https://github.com/khumam/Sastrapy
+Author: Khoerul Umam
+Author-email: id.khoerulumam@gmail.com
+License: MIT
+Description: A simple text processing for Bahasa Indonesia
+Keywords: stopword remover tokenize slang converter text processing
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

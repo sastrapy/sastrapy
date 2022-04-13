@@ -28,5 +28,5 @@ class SlangConverterMachine():
       if type(self.data) == str:
         data = self.data.split()
       
-      result = [self.dictionary[word.strip().lower()] if word.strip().lower() in self.dictionary else word for word in data]
-      return list(filter(None, result)) if type(self.data) == list else ' '.join(result).strip()
+      result = list(filter(None, [self.dictionary[word.strip().lower()] if word.strip().lower() in self.dictionary else word for word in data]))
+      return result if type(self.data) == list else ' '.join(result).strip()
