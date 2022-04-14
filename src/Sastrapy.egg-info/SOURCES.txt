@@ -5,6 +5,8 @@ src/Sastrapy.egg-info/SOURCES.txt
 src/Sastrapy.egg-info/dependency_links.txt
 src/Sastrapy.egg-info/requires.txt
 src/Sastrapy.egg-info/top_level.txt
+src/Sastrapy/Cleaner/TextCleaner.py
+src/Sastrapy/Cleaner/__init__.py
 src/Sastrapy/Corpus/SlangConverter.py
 src/Sastrapy/Corpus/StopwordRemover.py
 src/Sastrapy/Corpus/__init__.py
