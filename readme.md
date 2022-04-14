@@ -71,5 +71,38 @@ machine.importDictionary('path/to/slang_dictionary.txt')
 # Maka akan menggunakan kamus default
 machine.resetDictionary()
 ```
+#### Text Cleaner
+Fitur ini digunakan untuk membersihkan text dari karakter yang tidak sesuai. Berikut adalah contoh penggunaannya
+```py
+from Sastrapy.Cleaner.TextCleaner import CleanerTextMachine
+
+machine = CleanerTextMachine()
+data = 'Text yang ingin dibersihkan'
+
+# Data bisa berupa string atau hasil tokenzie berupa list
+# Di bawah ini method yang bisa digunakan
+
+machine.cleanNumber(data)     # Akan membersihkan semua angka
+machine.cleanUrl(data)        # Akan membersihkan link
+machine.cleanHashtag(data)    # Akan membersihkan hashtag #text
+macine.cleanMention(data)     # Akan membersihkan mention @nama
+machine.cleanSymbol(data)     # Akan membersihkan symbol
+
+# Akan membersihkan huruf yang panjangnya satu karakter saja
+machine.cleanSingleChar(dara) 
+
+# Akan membersihkan huruf yang panjangnya lebih kecil 
+# dari yang telah ditetapkan
+machine.cleanMinChar(data, length)  
+
+# Akan membersihkan data sesuai pattern regex yang ditentukan
+machine.cleanCustom(pattern, data)
+
+# Akan membersihkan semua url, angka, 
+# mention, hashtag, dan symbol
+machine.deepClean(data)
+
+```
 ## Pengembangan
 Pengembangan akan terus dilakukan untuk beradaptasi dengan bahasa yang ada
+

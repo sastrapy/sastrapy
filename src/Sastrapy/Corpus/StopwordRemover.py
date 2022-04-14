@@ -1,6 +1,6 @@
 import pathlib
 
-class StopwordRemoverMachine():
+class StopwordRemoverMachine:
   def __init__(self):
     path = pathlib.Path(__file__).parent.absolute()
     self.originalDictionaryPath = str(path) + '/Dictionary/stopwords.txt'

@@ -1,7 +1,7 @@
 import pathlib
 
 
-class SlangConverterMachine():
+class SlangConverterMachine:
     def __init__(self):
         path = pathlib.Path(__file__).parent.absolute()
         self.originalDictionaryPath = str(path) + '/Dictionary/slang.txt'
