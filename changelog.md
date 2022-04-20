@@ -16,6 +16,10 @@
 
 
 # Changelog
+
+## 0.1.8
+- Minor update
+- Add new method for get dictionary and add dictionary in slang converter and stopword remover
 ## 0.1.7
 - Minor update
 - Change repository url in package information
