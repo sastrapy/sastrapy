@@ -1,3 +1,4 @@
+README.md
 setup.py
 src/Sastrapy/__init__.py
 src/Sastrapy.egg-info/PKG-INFO

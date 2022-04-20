@@ -1,8 +1,8 @@
 Metadata-Version: 1.1
 Name: Sastrapy
-Version: 0.1.6
+Version: 0.1.7
 Summary: A simple text processing for Bahasa Indonesia
-Home-page: https://github.com/khumam/Sastrapy
+Home-page: https://github.com/sastrapy/sastrapy
 Author: Khoerul Umam
 Author-email: id.khoerulumam@gmail.com
 License: MIT

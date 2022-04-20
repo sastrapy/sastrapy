@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='Sastrapy',
-    version='0.1.6',
+    version='0.1.7',
     description='A simple text processing for Bahasa Indonesia',
     long_description='A simple text processing for Bahasa Indonesia',
-    url='https://github.com/khumam/Sastrapy',
+    url='https://github.com/sastrapy/sastrapy',
     author='Khoerul Umam',
     author_email='id.khoerulumam@gmail.com',
     license='MIT',
