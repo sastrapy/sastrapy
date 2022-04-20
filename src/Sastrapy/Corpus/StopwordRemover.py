@@ -1,4 +1,6 @@
 import pathlib
+from os.path import exists
+
 
 class StopwordRemoverMachine:
   def __init__(self):
@@ -10,21 +12,36 @@ class StopwordRemoverMachine:
     self.openDictionary()
 
   def openDictionary(self):
-    stopwordData = open(self.dictionaryPath, 'r')
-    self.dictionary = [word.rstrip().lower() for word in stopwordData.readlines()]
-  
+    dictionary = open(self.dictionaryPath, 'r')
+    self.dictionary = [word.rstrip().lower() for word in dictionary.readlines()]
+
   def resetDictionary(self):
     self.dictionaryPath = self.originalDictionaryPath
     self.openDictionary()
-  
+
   def importDictionary(self, path):
+    if not exists(path):
+      raise Exception('Dictionary path not found')
     self.dictionaryPath = path
     self.openDictionary()
+
+  def getDictionary(self):
+    return self.dictionary
+
+  def addDictionary(self, data):
+    if type(data) == list:
+      dictionary = [word.strip().lower() for word in data]
+    else:
+      if not exists(data):
+        raise Exception('Dictionary path not found')
+      source = open(data, 'r')
+      dictionary = [word.rstrip().lower() for word in source.readlines()]
+    self.dictionary = self.dictionary + dictionary
 
   def removeStopword(self, data):
     self.data = data
     if type(self.data) == str:
       data = self.data.split()
-    
+
     result = list(filter(None, [word.strip() if word.lower() not in self.dictionary else None for word in data]))
     return result if type(self.data) == list else ' '.join(result).strip()
