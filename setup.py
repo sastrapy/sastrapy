@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Sastrapy',
-    version='0.1.7',
+    version='0.1.9',
     description='A simple text processing for Bahasa Indonesia',
     long_description='A simple text processing for Bahasa Indonesia',
     url='https://github.com/sastrapy/sastrapy',
