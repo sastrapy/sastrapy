@@ -17,6 +17,8 @@
 
 # Changelog
 
+## 0.1.9
+- Add new method for text cleaner, clean emoji
 ## 0.1.8
 - Minor update
 - Add new method for get dictionary and add dictionary in slang converter and stopword remover
